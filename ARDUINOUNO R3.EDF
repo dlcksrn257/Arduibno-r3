@@ -1,0 +1,4267 @@
+
+(edif C__USERS_USER_DESKTOP_VSCODE_ORCAD_ARUINO_UNO_ARDUINOUNO_R3_EDF
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap
+    (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2019 7 11 6 55 18)
+      (program "cap2edif"
+        (version "Elgris Technologies, Inc. Schematic Writer version SPB 16.60_1.089 built Aug 14 2012"))
+      (author "Capture")
+      (dataOrigin "OrCAD Capture"
+        (version "SPB 16.60"))))
+  (library DEFAULT
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup PIN
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup JUNCTION
+        (color 100 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup WIRE
+        (color 50 0 25)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup BUS
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup PAGEBORDER
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC"))))
+    (cell PIN_ZERO
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "symbolPort")
+        (owner "Schematic_TSC"))
+      (view PIN_ZERO
+        (viewType GRAPHIC)
+        (interface)))
+    (cell PIN_ZERO_INVIS
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "symbolPort")
+        (owner "Schematic_TSC"))
+      (view PIN_ZERO_INVIS
+        (viewType GRAPHIC)
+        (interface)))
+    (cell JUNCTION
+      (cellType TIE)
+      (view JUNCTION
+        (viewType SCHEMATIC)
+        (interface
+          (port FAKE_TIE_PORT)
+          (symbol
+            (figure
+              (figureGroupOverride JUNCTION
+                (color 100 0 0))
+              (circle
+                (pt 2 0)
+                (pt -2 0)))))))
+    (cell PAGE_BORDER_TEMPLATE
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "pageTemplate")
+        (owner "Schematic_TSC"))
+      (property ETCCELLTYPE
+        (string "pageBorder")
+        (owner "Electronic Tools Company"))
+      (view PAGE_BORDER_TEMPLATE
+        (viewType GRAPHIC)
+        (interface)
+        (userData backgroundColor
+          (color 100 100 100)
+          (owner "Electronic Tools Company"))
+        (contents
+          (figure
+            (figureGroupOverride PAGEBORDER
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -2000)
+              (pt 2000 0))))))
+    (cell PIN_LINE
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "symbolPort")
+        (owner "Schematic_TSC"))
+      (view PIN_LINE
+        (viewType GRAPHIC)
+        (interface)
+        (contents
+          (figure
+            (figureGroupOverride PIN
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (path
+              (pointList
+                (pt 0 0)
+                (pt 30 0)))))))
+    (cell BUS_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view BUS_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell NET_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view NET_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell BUSWIDE_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSWIDE_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell BUSTHIN_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSTHIN_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell BUS_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view BUS_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10)))))))))
+    (cell NET_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view NET_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10)))))))))
+    (cell BUSWIDE_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSWIDE_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10)))))))))
+    (cell BUSTHIN_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSTHIN_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10))))))))))
+  (library CAPSYM
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup TITLEBLOCK
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 8)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 5)
+          (owner "Schematic_TSC")))
+      (figureGroup DISPLAYPROPERTY
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC"))))
+    (cell
+      (rename TITLEBLOCK0 "TitleBlock0")
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "pageTemplate")
+        (owner "Schematic_TSC"))
+      (property ETCCELLTYPE
+        (string "pageTitleBlock")
+        (owner "Electronic Tools Company"))
+      (view
+        (rename TITLEBLOCK0 "TitleBlock0")
+        (viewType GRAPHIC)
+        (interface)
+        (property
+          (rename PAGE_CREATE_DATE "Page Create Date")
+          (string "    March  8, 1995"))
+        (property
+          (rename DOC "Doc")
+          (string ""))
+        (property
+          (rename REVCODE "RevCode")
+          (string "?"))
+        (property
+          (rename TITLE "Title")
+          (string ""))
+        (property
+          (rename PAGE_SIZE "Page Size")
+          (string "A"))
+        (property
+          (rename PAGE_NUMBER "Page Number")
+          (string "1"))
+        (property
+          (rename PAGE_COUNT "Page Count")
+          (string "1"))
+        (property
+          (rename NAME "Name")
+          (string "TitleBlock0"))
+        (property
+          (rename PAGE_MODIFY_DATE "Page Modify Date")
+          (string ""))
+        (userData backgroundColor
+          (color 100 100 100)
+          (owner "Electronic Tools Company"))
+        (contents
+          (commentGraphics
+            (annotate
+              (stringDisplay "Title"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 0 -20)))))
+            (annotate
+              (stringDisplay "Size"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 0 -50)))))
+            (annotate
+              (stringDisplay "Document Number"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 40 -50)))))
+            (annotate
+              (stringDisplay "Rev"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 330 -50)))))
+            (annotate
+              (stringDisplay "Date:"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 0 -80)))))
+            (annotate
+              (stringDisplay "Sheet"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 200 -80)))))
+            (annotate
+              (stringDisplay "of"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 280 -80)))))
+            (property
+              (rename DOC "Doc")
+              (string
+                (stringDisplay ""
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 40 -60))))))
+            (property
+              (rename REVCODE "RevCode")
+              (string
+                (stringDisplay "?"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 340 -60))))))
+            (property
+              (rename TITLE "Title")
+              (string
+                (stringDisplay ""
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 40 -30))))))
+            (property
+              (rename PAGE_SIZE "Page Size")
+              (string
+                (stringDisplay "A"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 10 -60))))))
+            (property
+              (rename PAGE_NUMBER "Page Number")
+              (string
+                (stringDisplay "1"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 250 -80))))))
+            (property
+              (rename PAGE_COUNT "Page Count")
+              (string
+                (stringDisplay "1"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 310 -80))))))
+            (property
+              (rename PAGE_MODIFY_DATE "Page Modify Date")
+              (string
+                (stringDisplay ""
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 52 -80)))))))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -20)
+              (pt 360 0)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -50)
+              (pt 360 -20)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -80)
+              (pt 30 -50)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 30 -80)
+              (pt 330 -50)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 330 -80)
+              (pt 360 -50)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -90)
+              (pt 200 -80)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 200 -90)
+              (pt 360 -80)))))))
+  (library
+    (rename ARDUINOUNO_R3 "ARDUINOUNO R3")
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup PARTBODY
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 8)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 5)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNUMBER
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNAME
+        (color 0 25 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PARTREFERENCE
+        (color 0 0 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PARTVALUE
+        (color 0 0 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup DISPLAYPROPERTY
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PIN
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC"))))
+    (cell
+      (rename ATMEGA8_TQFP32_0 "ATMega8-TQFP32_0")
+      (cellType GENERIC)
+      (property
+        (rename SOURCE_PACKAGE "Source Package")
+        (string "ATMega8-TQFP32_0"))
+      (property
+        (rename NUMBER_DEVICES_IN_PACKAGE "Number devices in Package")
+        (string "1"))
+      (property
+        (rename POSITIONINPACKAGE "PositionInPackage")
+        (string ""))
+      (view
+        (rename ATMEGA8_TQFP32_0_NORMAL "ATMega8-TQFP32_0.Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (rename &_SCLK_PCINT1_PB1 "(SCLK/PCINT1)PB1")
+            (designator "15")
+            (property
+              (rename NAME "Name")
+              (string "(SCLK/PCINT1)PB1"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "15")))
+          (port
+            (rename &_PDI_MOSI_PCINT2_PB2 "(PDI/MOSI/PCINT2)PB2")
+            (designator "16")
+            (property
+              (rename NAME "Name")
+              (string "(PDI/MOSI/PCINT2)PB2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "16")))
+          (port
+            (rename &_AIN0_INT1_PD1 "(AIN0/INT1)PD1")
+            (designator "7")
+            (property
+              (rename NAME "Name")
+              (string "(AIN0/INT1)PD1"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "7")))
+          (port
+            (rename &_PCINT7_OC0A_OC1C_PB7 "(PCINT7/OC0A/OC1C)PB7")
+            (designator "21")
+            (property
+              (rename NAME "Name")
+              (string "(PCINT7/OC0A/OC1C)PB7"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "21")))
+          (port
+            (rename &_RXD1_AIN1_INT2_PD2 "(RXD1/AIN1/INT2)PD2")
+            (designator "8")
+            (property
+              (rename NAME "Name")
+              (string "(RXD1/AIN1/INT2)PD2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "8")))
+          (port
+            (rename &_PCINT6_PB6 "(PCINT6)PB6")
+            (designator "20")
+            (property
+              (rename NAME "Name")
+              (string "(PCINT6)PB6"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "20")))
+          (port GND
+            (designator "3")
+            (property
+              (rename NAME "Name")
+              (string "GND"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "3")))
+          (port UVCC
+            (designator "31")
+            (property
+              (rename NAME "Name")
+              (string "UVCC"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "31")))
+          (port
+            (rename &_PD0_MISO_PCINT3_PB3 "(PD0/MISO/PCINT3)PB3")
+            (designator "17")
+            (property
+              (rename NAME "Name")
+              (string "(PD0/MISO/PCINT3)PB3"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "17")))
+          (port
+            (rename &_T1_PCINT4_PB4 "(T1/PCINT4)PB4")
+            (designator "18")
+            (property
+              (rename NAME "Name")
+              (string "(T1/PCINT4)PB4"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "18")))
+          (port
+            (rename &_PCINT5_PB5 "(PCINT5)PB5")
+            (designator "19")
+            (property
+              (rename NAME "Name")
+              (string "(PCINT5)PB5"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "19")))
+          (port
+            (rename RESET_PC1_DW_ "RESET(PC1/DW)")
+            (designator "24")
+            (property
+              (rename NAME "Name")
+              (string "RESET(PC1/DW)"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "24")))
+          (port
+            (rename XTAL2_PC0_ "XTAL2(PC0)")
+            (designator "2")
+            (property
+              (rename NAME "Name")
+              (string "XTAL2(PC0)"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "2")))
+          (port XTAL
+            (designator "1")
+            (property
+              (rename NAME "Name")
+              (string "XTAL"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "1")))
+          (port AVCC
+            (designator "32")
+            (property
+              (rename NAME "Name")
+              (string "AVCC"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "32")))
+          (port VCC
+            (designator "4")
+            (property
+              (rename NAME "Name")
+              (string "VCC"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "4")))
+          (port UCAP
+            (designator "27")
+            (property
+              (rename NAME "Name")
+              (string "UCAP"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "27")))
+          (port
+            (rename D_ "D-")
+            (designator "30")
+            (property
+              (rename NAME "Name")
+              (string "D-"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "30")))
+          (port UGND
+            (designator "28")
+            (property
+              (rename NAME "Name")
+              (string "UGND"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "28")))
+          (port
+            (rename D__0 "D+")
+            (designator "29")
+            (property
+              (rename NAME "Name")
+              (string "D+"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "29")))
+          (port
+            (rename &_TXD1_INT3_PD3 "(TXD1/INT3)PD3")
+            (designator "9")
+            (property
+              (rename NAME "Name")
+              (string "(TXD1/INT3)PD3"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "9")))
+          (port PAD
+            (designator "33")
+            (property
+              (rename NAME "Name")
+              (string "PAD"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "33")))
+          (port
+            (rename &_INT5_AIN3_PD4 "(INT5/AIN3)PD4")
+            (designator "10")
+            (property
+              (rename NAME "Name")
+              (string "(INT5/AIN3)PD4"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "10")))
+          (port
+            (rename &_XCK_AIN4_PCINT12_PD5 "(XCK/AIN4/PCINT12)PD5")
+            (designator "11")
+            (property
+              (rename NAME "Name")
+              (string "(XCK/AIN4/PCINT12)PD5"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "11")))
+          (port
+            (rename &_RTS_AIN5_INT6_PD6 "(RTS/AIN5/INT6)PD6")
+            (designator "12")
+            (property
+              (rename NAME "Name")
+              (string "(RTS/AIN5/INT6)PD6"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "12")))
+          (port
+            (rename &_CTS_HWB_AIN6_TO_INT7_PD7 "(CTS/HWB/AIN6/TO/INT7)PD7")
+            (designator "13")
+            (property
+              (rename NAME "Name")
+              (string "(CTS/HWB/AIN6/TO/INT7)PD7"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "13")))
+          (port
+            (rename &_AIN2_PCINT11_PC2 "(AIN2/PCINT11)PC2")
+            (designator "5")
+            (property
+              (rename NAME "Name")
+              (string "(AIN2/PCINT11)PC2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "5")))
+          (port
+            (rename &_PCINT10_PC4 "(PCINT10)PC4")
+            (designator "26")
+            (property
+              (rename NAME "Name")
+              (string "(PCINT10)PC4"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "26")))
+          (port
+            (rename &_PCINT9_OC1B_PC5 "(PCINT9/OC1B)PC5")
+            (designator "25")
+            (property
+              (rename NAME "Name")
+              (string "(PCINT9/OC1B)PC5"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "25")))
+          (port
+            (rename &_OC1A_PCINT8_PC6 "(OC1A/PCINT8)PC6")
+            (designator "23")
+            (property
+              (rename NAME "Name")
+              (string "(OC1A/PCINT8)PC6"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "23")))
+          (port
+            (rename &_INT4_ICP1_CLK0_PC7 "(INT4/ICP1/CLK0)PC7")
+            (designator "22")
+            (property
+              (rename NAME "Name")
+              (string "(INT4/ICP1/CLK0)PC7"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "22")))
+          (port
+            (rename &_SS_PCINT0_PB0 "(SS/PCINT0)PB0")
+            (designator "14")
+            (property
+              (rename NAME "Name")
+              (string "(SS/PCINT0)PB0"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "14")))
+          (port
+            (rename &_OC0B_INT0_PD0 "(OC0B/INT0)PD0")
+            (designator "6")
+            (property
+              (rename NAME "Name")
+              (string "(OC0B/INT0)PD0"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "6")))
+          (designator "IC?")
+          (symbol
+            (property
+              (rename VALUE "Value")
+              (string
+                (stringDisplay "ATmega16U2-MU<R>"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 60 -260))))))
+            (property
+              (rename IMPLEMENTATION "Implementation")
+              (string ""))
+            (property
+              (rename IMPLEMENTATION_TYPE "Implementation Type")
+              (string "<none>"))
+            (property
+              (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+              (string "True"))
+            (property
+              (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+              (string "True"))
+            (property
+              (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+              (string "True"))
+            (userData backgroundColor
+              (color 100 100 100)
+              (owner "Electronic Tools Company"))
+            (portImplementation
+              (name &_SCLK_PCINT1_PB1
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -70))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -70))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -70)
+                    (pt 180 -70))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -70)))))
+            (portImplementation
+              (name &_PDI_MOSI_PCINT2_PB2
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -60))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -60))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -60)
+                    (pt 180 -60))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -60)))))
+            (portImplementation
+              (name &_AIN0_INT1_PD1
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -230))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -230))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -230)
+                    (pt 180 -230))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -230)))))
+            (portImplementation
+              (name &_PCINT7_OC0A_OC1C_PB7
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -10))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -10))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -10)
+                    (pt 180 -10))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -10)))))
+            (portImplementation
+              (name &_RXD1_AIN1_INT2_PD2
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -220))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -220))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -220)
+                    (pt 180 -220))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -220)))))
+            (portImplementation
+              (name &_PCINT6_PB6
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -20))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -20))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -20)
+                    (pt 180 -20))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -20)))))
+            (portImplementation
+              (name GND
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -120))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -120))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -120)
+                    (pt 0 -120))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -120)))))
+            (portImplementation
+              (name UVCC
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -150))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -150))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -150)
+                    (pt 0 -150))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -150)))))
+            (portImplementation
+              (name &_PD0_MISO_PCINT3_PB3
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -50))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -50))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -50)
+                    (pt 180 -50))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -50)))))
+            (portImplementation
+              (name &_T1_PCINT4_PB4
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -40))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -40))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -40)
+                    (pt 180 -40))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -40)))))
+            (portImplementation
+              (name &_PCINT5_PB5
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -30))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -30))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -30)
+                    (pt 180 -30))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -30)))))
+            (portImplementation
+              (name RESET_PC1_DW_
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -20))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -20))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -20)
+                    (pt 0 -20))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -20)))))
+            (portImplementation
+              (name XTAL2_PC0_
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -50))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -50))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -50)
+                    (pt 0 -50))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -50)))))
+            (portImplementation
+              (name XTAL
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -60))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -60))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -60)
+                    (pt 0 -60))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -60)))))
+            (portImplementation
+              (name AVCC
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -80))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -80))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -80)
+                    (pt 0 -80))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -80)))))
+            (portImplementation
+              (name VCC
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -110))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -110))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -110)
+                    (pt 0 -110))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -110)))))
+            (portImplementation
+              (name UCAP
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -140))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -140))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -140)
+                    (pt 0 -140))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -140)))))
+            (portImplementation
+              (name D_
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -160))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -160))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -160)
+                    (pt 0 -160))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -160)))))
+            (portImplementation
+              (name UGND
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -180))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -180))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -180)
+                    (pt 0 -180))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -180)))))
+            (portImplementation
+              (name D__0
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -170))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -170))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -170)
+                    (pt 0 -170))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -170)))))
+            (portImplementation
+              (name &_TXD1_INT3_PD3
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -210))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -210))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -210)
+                    (pt 180 -210))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -210)))))
+            (portImplementation
+              (name PAD
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -190))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -190))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -190)
+                    (pt 0 -190))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -190)))))
+            (portImplementation
+              (name &_INT5_AIN3_PD4
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -200))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -200))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -200)
+                    (pt 180 -200))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -200)))))
+            (portImplementation
+              (name &_XCK_AIN4_PCINT12_PD5
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -190))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -190))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -190)
+                    (pt 180 -190))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -190)))))
+            (portImplementation
+              (name &_RTS_AIN5_INT6_PD6
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -180))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -180))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -180)
+                    (pt 180 -180))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -180)))))
+            (portImplementation
+              (name &_CTS_HWB_AIN6_TO_INT7_PD7
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -170))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -170))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -170)
+                    (pt 180 -170))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -170)))))
+            (portImplementation
+              (name &_AIN2_PCINT11_PC2
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -150))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -150))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -150)
+                    (pt 180 -150))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -150)))))
+            (portImplementation
+              (name &_PCINT10_PC4
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -140))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -140))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -140)
+                    (pt 180 -140))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -140)))))
+            (portImplementation
+              (name &_PCINT9_OC1B_PC5
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -130))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -130))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -130)
+                    (pt 180 -130))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -130)))))
+            (portImplementation
+              (name &_OC1A_PCINT8_PC6
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -120))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -120))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -120)
+                    (pt 180 -120))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -120)))))
+            (portImplementation
+              (name &_INT4_ICP1_CLK0_PC7
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -110))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -110))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -110)
+                    (pt 180 -110))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -110)))))
+            (portImplementation
+              (name &_SS_PCINT0_PB0
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -90))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -90))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -90)
+                    (pt 180 -90))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -90)))))
+            (portImplementation
+              (name &_OC0B_INT0_PD0
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -240))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -240))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -240)
+                    (pt 180 -240))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -240)))))
+            (figure
+              (figureGroupOverride PARTBODY
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (rectangle
+                (pt 0 -250)
+                (pt 180 0)))
+            (keywordDisplay designator
+              (display PARTREFERENCE
+                (justify UPPERLEFT)
+                (origin
+                  (pt 130 20))))))))
+    (cell
+      (rename ATMEGA8_TQFP32_1 "ATMega8-TQFP32_1")
+      (cellType GENERIC)
+      (property
+        (rename SOURCE_PACKAGE "Source Package")
+        (string "ATMega8-TQFP32_1"))
+      (property
+        (rename NUMBER_DEVICES_IN_PACKAGE "Number devices in Package")
+        (string "1"))
+      (property
+        (rename POSITIONINPACKAGE "PositionInPackage")
+        (string ""))
+      (view
+        (rename ATMEGA8_TQFP32_1_NORMAL "ATMega8-TQFP32_1.Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (rename &_ADC5_PC5 "(ADC5)PC5")
+            (designator "28")
+            (property
+              (rename NAME "Name")
+              (string "(ADC5)PC5"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "28")))
+          (port
+            (rename &_ICP_PB0 "(ICP)PB0")
+            (designator "14")
+            (property
+              (rename NAME "Name")
+              (string "(ICP)PB0"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "14")))
+          (port
+            (rename &_TXD_PD1 "(TXD)PD1")
+            (designator "3")
+            (property
+              (rename NAME "Name")
+              (string "(TXD)PD1"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "3")))
+          (port
+            (rename &_SCK_PB5 "(SCK)PB5")
+            (designator "19")
+            (property
+              (rename NAME "Name")
+              (string "(SCK)PB5"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "19")))
+          (port
+            (rename &_MISO_PB4 "(MISO)PB4")
+            (designator "18")
+            (property
+              (rename NAME "Name")
+              (string "(MISO)PB4"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "18")))
+          (port AGND
+            (designator "22")
+            (property
+              (rename NAME "Name")
+              (string "AGND"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "22")))
+          (port GND
+            (designator "8")
+            (property
+              (rename NAME "Name")
+              (string "GND"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "8")))
+          (port
+            (rename &_OC1_PB1 "(OC1)PB1")
+            (designator "15")
+            (property
+              (rename NAME "Name")
+              (string "(OC1)PB1"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "15")))
+          (port
+            (rename &_SS_PB2 "(SS)PB2")
+            (designator "16")
+            (property
+              (rename NAME "Name")
+              (string "(SS)PB2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "16")))
+          (port
+            (rename &_MOSI_PB3 "(MOSI)PB3")
+            (designator "17")
+            (property
+              (rename NAME "Name")
+              (string "(MOSI)PB3"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "17")))
+          (port
+            (rename RESET_PC1_DW_ "RESET(PC1/DW)")
+            (designator "1")
+            (property
+              (rename NAME "Name")
+              (string "RESET(PC1/DW)"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "1")))
+          (port XTAL2
+            (designator "10")
+            (property
+              (rename NAME "Name")
+              (string "XTAL2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "10")))
+          (port XTAL1
+            (designator "9")
+            (property
+              (rename NAME "Name")
+              (string "XTAL1"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "9")))
+          (port AREF
+            (designator "21")
+            (property
+              (rename NAME "Name")
+              (string "AREF"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "21")))
+          (port AVCC
+            (designator "20")
+            (property
+              (rename NAME "Name")
+              (string "AVCC"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "20")))
+          (port VCC
+            (designator "7")
+            (property
+              (rename NAME "Name")
+              (string "VCC"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "7")))
+          (port
+            (rename &_INT0_PD2 "(INT0)PD2")
+            (designator "4")
+            (property
+              (rename NAME "Name")
+              (string "(INT0)PD2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "4")))
+          (port
+            (rename &_INT1_PD3 "(INT1)PD3")
+            (designator "5")
+            (property
+              (rename NAME "Name")
+              (string "(INT1)PD3"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "5")))
+          (port
+            (rename &_T0_PD4 "(T0)PD4")
+            (designator "6")
+            (property
+              (rename NAME "Name")
+              (string "(T0)PD4"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "6")))
+          (port
+            (rename &_T1_PD5 "(T1)PD5")
+            (designator "11")
+            (property
+              (rename NAME "Name")
+              (string "(T1)PD5"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "11")))
+          (port
+            (rename &_AIN0_PD6 "(AIN0)PD6")
+            (designator "12")
+            (property
+              (rename NAME "Name")
+              (string "(AIN0)PD6"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "12")))
+          (port
+            (rename &_AIN1_PD7 "(AIN1)PD7")
+            (designator "13")
+            (property
+              (rename NAME "Name")
+              (string "(AIN1)PD7"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "13")))
+          (port
+            (rename &_ADC0_PC0_ "(ADC0)PC0)")
+            (designator "23")
+            (property
+              (rename NAME "Name")
+              (string "(ADC0)PC0)"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "23")))
+          (port
+            (rename &_ADC1_PC1 "(ADC1)PC1")
+            (designator "24")
+            (property
+              (rename NAME "Name")
+              (string "(ADC1)PC1"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "24")))
+          (port
+            (rename &_ADC2_PC2 "(ADC2)PC2")
+            (designator "25")
+            (property
+              (rename NAME "Name")
+              (string "(ADC2)PC2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "25")))
+          (port
+            (rename &_ADC3_PC3 "(ADC3)PC3")
+            (designator "26")
+            (property
+              (rename NAME "Name")
+              (string "(ADC3)PC3"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "26")))
+          (port
+            (rename &_ADC4_PC4 "(ADC4)PC4")
+            (designator "27")
+            (property
+              (rename NAME "Name")
+              (string "(ADC4)PC4"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "27")))
+          (port
+            (rename &_RXD_PD0 "(RXD)PD0")
+            (designator "2")
+            (property
+              (rename NAME "Name")
+              (string "(RXD)PD0"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "2")))
+          (designator "IC?")
+          (symbol
+            (property
+              (rename VALUE "Value")
+              (string
+                (stringDisplay "ATmega328P-PU"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 60 -260))))))
+            (property
+              (rename IMPLEMENTATION "Implementation")
+              (string ""))
+            (property
+              (rename IMPLEMENTATION_TYPE "Implementation Type")
+              (string "<none>"))
+            (property
+              (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+              (string "True"))
+            (property
+              (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+              (string "True"))
+            (property
+              (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+              (string "True"))
+            (userData backgroundColor
+              (color 100 100 100)
+              (owner "Electronic Tools Company"))
+            (portImplementation
+              (name &_ADC5_PC5
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -90))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -90))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -90)
+                    (pt 180 -90))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -90)))))
+            (portImplementation
+              (name &_ICP_PB0
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -60))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -60))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -60)
+                    (pt 180 -60))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -60)))))
+            (portImplementation
+              (name &_TXD_PD1
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -220))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -220))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -220)
+                    (pt 180 -220))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -220)))))
+            (portImplementation
+              (name &_SCK_PB5
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -10))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -10))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -10)
+                    (pt 180 -10))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -10)))))
+            (portImplementation
+              (name &_MISO_PB4
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -20))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -20))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -20)
+                    (pt 180 -20))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -20)))))
+            (portImplementation
+              (name AGND
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -120))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -120))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -120)
+                    (pt 0 -120))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -120)))))
+            (portImplementation
+              (name GND
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -150))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -150))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -150)
+                    (pt 0 -150))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -150)))))
+            (portImplementation
+              (name &_OC1_PB1
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -50))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -50))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -50)
+                    (pt 180 -50))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -50)))))
+            (portImplementation
+              (name &_SS_PB2
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -40))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -40))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -40)
+                    (pt 180 -40))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -40)))))
+            (portImplementation
+              (name &_MOSI_PB3
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -30))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -30))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -30)
+                    (pt 180 -30))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -30)))))
+            (portImplementation
+              (name RESET_PC1_DW_
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -20))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -20))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -20)
+                    (pt 0 -20))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -20)))))
+            (portImplementation
+              (name XTAL2
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -50))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -50))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -50)
+                    (pt 0 -50))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -50)))))
+            (portImplementation
+              (name XTAL1
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -60))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -60))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -60)
+                    (pt 0 -60))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -60)))))
+            (portImplementation
+              (name AREF
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -100))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -100))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -100)
+                    (pt 0 -100))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -100)))))
+            (portImplementation
+              (name AVCC
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -110))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -110))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -110)
+                    (pt 0 -110))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -110)))))
+            (portImplementation
+              (name VCC
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -140))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -140))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -30 -140)
+                    (pt 0 -140))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -30 -140)))))
+            (portImplementation
+              (name &_INT0_PD2
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -210))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -210))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -210)
+                    (pt 180 -210))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -210)))))
+            (portImplementation
+              (name &_INT1_PD3
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -200))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -200))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -200)
+                    (pt 180 -200))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -200)))))
+            (portImplementation
+              (name &_T0_PD4
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -190))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -190))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -190)
+                    (pt 180 -190))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -190)))))
+            (portImplementation
+              (name &_T1_PD5
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -180))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -180))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -180)
+                    (pt 180 -180))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -180)))))
+            (portImplementation
+              (name &_AIN0_PD6
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -170))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -170))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -170)
+                    (pt 180 -170))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -170)))))
+            (portImplementation
+              (name &_AIN1_PD7
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -160))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -160))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -160)
+                    (pt 180 -160))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -160)))))
+            (portImplementation
+              (name &_ADC0_PC0_
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -140))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -140))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -140)
+                    (pt 180 -140))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -140)))))
+            (portImplementation
+              (name &_ADC1_PC1
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -130))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -130))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -130)
+                    (pt 180 -130))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -130)))))
+            (portImplementation
+              (name &_ADC2_PC2
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -120))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -120))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -120)
+                    (pt 180 -120))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -120)))))
+            (portImplementation
+              (name &_ADC3_PC3
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -110))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -110))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -110)
+                    (pt 180 -110))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -110)))))
+            (portImplementation
+              (name &_ADC4_PC4
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -100))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -100))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -100)
+                    (pt 180 -100))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -100)))))
+            (portImplementation
+              (name &_RXD_PD0
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 178 -230))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 188 -230))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 210 -230)
+                    (pt 180 -230))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 210 -230)))))
+            (figure
+              (figureGroupOverride PARTBODY
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (rectangle
+                (pt 0 -250)
+                (pt 180 0)))
+            (keywordDisplay designator
+              (display PARTREFERENCE
+                (justify UPPERLEFT)
+                (origin
+                  (pt 130 20))))))))
+    (cell SCHEMATIC1
+      (cellType GENERIC)
+      (view SCHEMATIC1_SCH
+        (viewType SCHEMATIC)
+        (interface)
+        (contents
+          (page PAGE1
+            (commentGraphics
+              (property
+                (rename OUTERBORDERMARGIN "OuterBorderMargin")
+                (point
+                  (pt 0 0)))
+              (property
+                (rename INNERBORDERMARGIN "InnerBorderMargin")
+                (point
+                  (pt 0 0)))
+              (property
+                (rename HORIZONTALLABELCOUNT "HorizontalLabelCount")
+                (integer 5))
+              (property
+                (rename HORIZONTALLABELWIDTH "HorizontalLabelWidth")
+                (integer 10))
+              (property
+                (rename VERTICALLABELCOUNT "VerticalLabelCount")
+                (integer 4))
+              (property
+                (rename VERTICALLABELWIDTH "VerticalLabelWidth")
+                (integer 10))
+              (property
+                (rename OUTERBORDERLINESTYLE "OuterBorderLineStyle")
+                (integer 0))
+              (property
+                (rename OUTERBORDERLINEWIDTH "OuterBorderLineWidth")
+                (integer 0))
+              (property
+                (rename INNERBORDERLINESTYLE "InnerBorderLineStyle")
+                (integer 0))
+              (property
+                (rename INNERBORDERLINEWIDTH "InnerBorderLineWidth")
+                (integer 0))
+              (property
+                (rename HORIZONTALSEPARATORLINESTYLE "HorizontalSeparatorLineStyle")
+                (integer 0))
+              (property
+                (rename HORIZONTALSEPARATORLINEWIDTH "HorizontalSeparatorLineWidth")
+                (integer 0))
+              (property
+                (rename VERTICALSEPARATORLINESTYLE "VerticalSeparatorLineStyle")
+                (integer 0))
+              (property
+                (rename VERTICALSEPARATORLINEWIDTH "VerticalSeparatorLineWidth")
+                (integer 0))
+              (property
+                (rename OUTERBORDERISVISIBLE "OuterBorderIsVisible")
+                (boolean
+                  (true)))
+              (property
+                (rename INNERBORDERISVISIBLE "InnerBorderIsVisible")
+                (boolean
+                  (false)))
+              (property
+                (rename HORIZONTALLABELISCHAR "HorizontalLabelIsChar")
+                (boolean
+                  (false)))
+              (property
+                (rename HORIZONTALLABELISVISIBLE "HorizontalLabelIsVisible")
+                (boolean
+                  (false)))
+              (property
+                (rename HORIZONTALLABELISASCENDING "HorizontalLabelIsAscending")
+                (boolean
+                  (false)))
+              (property
+                (rename VERTICALLABELISCHAR "VerticalLabelIsChar")
+                (boolean
+                  (true)))
+              (property
+                (rename VERTICALLABELISVISIBLE "VerticalLabelIsVisible")
+                (boolean
+                  (false)))
+              (property
+                (rename VERTICALLABELISASCENDING "VerticalLabelIsAscending")
+                (boolean
+                  (false)))
+              (property
+                (rename BORDERDISPLAYED "BorderDisplayed")
+                (boolean
+                  (true)))
+              (property
+                (rename BORDERPRINTED "BorderPrinted")
+                (boolean
+                  (true)))
+              (property
+                (rename GRIDREFDISPLAYED "GridRefDisplayed")
+                (boolean
+                  (true)))
+              (property
+                (rename GRIDREFPRINTED "GridRefPrinted")
+                (boolean
+                  (true)))
+              (property
+                (rename ANSIGRIDREFS "ANSIGridRefs")
+                (boolean
+                  (true)))
+              (property
+                (rename TITLEBLOCKDISPLAYED "TitleBlockDisplayed")
+                (boolean
+                  (true)))
+              (property
+                (rename TITLEBLOCKPRINTED "TitleBlockPrinted")
+                (boolean
+                  (true))))
+            (userData backgroundColor
+              (color 100 100 100)
+              (owner "Electronic Tools Company"))
+            (instance INS628
+              (viewRef ATMEGA8_TQFP32_0_NORMAL
+                (cellRef ATMEGA8_TQFP32_0))
+              (designator
+                (stringDisplay "IC1"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 580 -1160)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string ""))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "ATMega8-TQFP32_0"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "ATmega8 - TQFP32"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 570 -1440))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "True"))
+              (portInstance
+                (name &_SCLK_PCINT1_PB1
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1250))))
+                (designator
+                  (stringDisplay "15"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1250))))))
+              (portInstance
+                (name &_PDI_MOSI_PCINT2_PB2
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1240))))
+                (designator
+                  (stringDisplay "16"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1240))))))
+              (portInstance
+                (name &_AIN0_INT1_PD1
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1410))))
+                (designator
+                  (stringDisplay "7"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1410))))))
+              (portInstance
+                (name &_PCINT7_OC0A_OC1C_PB7
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1190))))
+                (designator
+                  (stringDisplay "21"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1190))))))
+              (portInstance
+                (name &_RXD1_AIN1_INT2_PD2
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1400))))
+                (designator
+                  (stringDisplay "8"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1400))))))
+              (portInstance
+                (name &_PCINT6_PB6
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1200))))
+                (designator
+                  (stringDisplay "20"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1200))))))
+              (portInstance
+                (name GND
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1300))))
+                (designator
+                  (stringDisplay "3"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1300))))))
+              (portInstance
+                (name UVCC
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1330))))
+                (designator
+                  (stringDisplay "31"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1330))))))
+              (portInstance
+                (name &_PD0_MISO_PCINT3_PB3
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1230))))
+                (designator
+                  (stringDisplay "17"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1230))))))
+              (portInstance
+                (name &_T1_PCINT4_PB4
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1220))))
+                (designator
+                  (stringDisplay "18"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1220))))))
+              (portInstance
+                (name &_PCINT5_PB5
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1210))))
+                (designator
+                  (stringDisplay "19"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1210))))))
+              (portInstance
+                (name RESET_PC1_DW_
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1200))))
+                (designator
+                  (stringDisplay "24"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1200))))))
+              (portInstance
+                (name XTAL2_PC0_
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1230))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1230))))))
+              (portInstance
+                (name XTAL
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1240))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1240))))))
+              (portInstance
+                (name AVCC
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1260))))
+                (designator
+                  (stringDisplay "32"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1260))))))
+              (portInstance
+                (name VCC
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1290))))
+                (designator
+                  (stringDisplay "4"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1290))))))
+              (portInstance
+                (name UCAP
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1320))))
+                (designator
+                  (stringDisplay "27"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1320))))))
+              (portInstance
+                (name D_
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1340))))
+                (designator
+                  (stringDisplay "30"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1340))))))
+              (portInstance
+                (name UGND
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1360))))
+                (designator
+                  (stringDisplay "28"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1360))))))
+              (portInstance
+                (name D__0
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1350))))
+                (designator
+                  (stringDisplay "29"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1350))))))
+              (portInstance
+                (name &_TXD1_INT3_PD3
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1390))))
+                (designator
+                  (stringDisplay "9"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1390))))))
+              (portInstance
+                (name PAD
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 456 -1370))))
+                (designator
+                  (stringDisplay "33"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 442 -1370))))))
+              (portInstance
+                (name &_INT5_AIN3_PD4
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1380))))
+                (designator
+                  (stringDisplay "10"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1380))))))
+              (portInstance
+                (name &_XCK_AIN4_PCINT12_PD5
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1370))))
+                (designator
+                  (stringDisplay "11"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1370))))))
+              (portInstance
+                (name &_RTS_AIN5_INT6_PD6
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1360))))
+                (designator
+                  (stringDisplay "12"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1360))))))
+              (portInstance
+                (name &_CTS_HWB_AIN6_TO_INT7_PD7
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1350))))
+                (designator
+                  (stringDisplay "13"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1350))))))
+              (portInstance
+                (name &_AIN2_PCINT11_PC2
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1330))))
+                (designator
+                  (stringDisplay "5"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1330))))))
+              (portInstance
+                (name &_PCINT10_PC4
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1320))))
+                (designator
+                  (stringDisplay "26"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1320))))))
+              (portInstance
+                (name &_PCINT9_OC1B_PC5
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1310))))
+                (designator
+                  (stringDisplay "25"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1310))))))
+              (portInstance
+                (name &_OC1A_PCINT8_PC6
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1300))))
+                (designator
+                  (stringDisplay "23"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1300))))))
+              (portInstance
+                (name &_INT4_ICP1_CLK0_PC7
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1290))))
+                (designator
+                  (stringDisplay "22"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1290))))))
+              (portInstance
+                (name &_SS_PCINT0_PB0
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1270))))
+                (designator
+                  (stringDisplay "14"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1270))))))
+              (portInstance
+                (name &_OC0B_INT0_PD0
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 628 -1420))))
+                (designator
+                  (stringDisplay "6"
+                    (display PINNUMBER
+                      (origin
+                        (pt 638 -1420))))))
+              (transform
+                (origin
+                  (pt 450 -1180))))
+            (instance INS1366
+              (viewRef ATMEGA8_TQFP32_1_NORMAL
+                (cellRef ATMEGA8_TQFP32_1))
+              (designator
+                (stringDisplay "IC2"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 1040 -1180)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string ""))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "ATMega8-TQFP32_1"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "ATmega16U2-MU<R>"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 970 -1460))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "True"))
+              (portInstance
+                (name &_ADC5_PC5
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1290))))
+                (designator
+                  (stringDisplay "28"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1290))))))
+              (portInstance
+                (name &_ICP_PB0
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1260))))
+                (designator
+                  (stringDisplay "14"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1260))))))
+              (portInstance
+                (name &_TXD_PD1
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1420))))
+                (designator
+                  (stringDisplay "3"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1420))))))
+              (portInstance
+                (name &_SCK_PB5
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1210))))
+                (designator
+                  (stringDisplay "19"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1210))))))
+              (portInstance
+                (name &_MISO_PB4
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1220))))
+                (designator
+                  (stringDisplay "18"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1220))))))
+              (portInstance
+                (name AGND
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1320))))
+                (designator
+                  (stringDisplay "22"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1320))))))
+              (portInstance
+                (name GND
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1350))))
+                (designator
+                  (stringDisplay "8"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1350))))))
+              (portInstance
+                (name &_OC1_PB1
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1250))))
+                (designator
+                  (stringDisplay "15"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1250))))))
+              (portInstance
+                (name &_SS_PB2
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1240))))
+                (designator
+                  (stringDisplay "16"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1240))))))
+              (portInstance
+                (name &_MOSI_PB3
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1230))))
+                (designator
+                  (stringDisplay "17"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1230))))))
+              (portInstance
+                (name RESET_PC1_DW_
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1220))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1220))))))
+              (portInstance
+                (name XTAL2
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1250))))
+                (designator
+                  (stringDisplay "10"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1250))))))
+              (portInstance
+                (name XTAL1
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1260))))
+                (designator
+                  (stringDisplay "9"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1260))))))
+              (portInstance
+                (name AREF
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1300))))
+                (designator
+                  (stringDisplay "21"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1300))))))
+              (portInstance
+                (name AVCC
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1310))))
+                (designator
+                  (stringDisplay "20"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1310))))))
+              (portInstance
+                (name VCC
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 916 -1340))))
+                (designator
+                  (stringDisplay "7"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 902 -1340))))))
+              (portInstance
+                (name &_INT0_PD2
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1410))))
+                (designator
+                  (stringDisplay "4"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1410))))))
+              (portInstance
+                (name &_INT1_PD3
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1400))))
+                (designator
+                  (stringDisplay "5"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1400))))))
+              (portInstance
+                (name &_T0_PD4
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1390))))
+                (designator
+                  (stringDisplay "6"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1390))))))
+              (portInstance
+                (name &_T1_PD5
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1380))))
+                (designator
+                  (stringDisplay "11"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1380))))))
+              (portInstance
+                (name &_AIN0_PD6
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1370))))
+                (designator
+                  (stringDisplay "12"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1370))))))
+              (portInstance
+                (name &_AIN1_PD7
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1360))))
+                (designator
+                  (stringDisplay "13"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1360))))))
+              (portInstance
+                (name &_ADC0_PC0_
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1340))))
+                (designator
+                  (stringDisplay "23"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1340))))))
+              (portInstance
+                (name &_ADC1_PC1
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1330))))
+                (designator
+                  (stringDisplay "24"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1330))))))
+              (portInstance
+                (name &_ADC2_PC2
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1320))))
+                (designator
+                  (stringDisplay "25"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1320))))))
+              (portInstance
+                (name &_ADC3_PC3
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1310))))
+                (designator
+                  (stringDisplay "26"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1310))))))
+              (portInstance
+                (name &_ADC4_PC4
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1300))))
+                (designator
+                  (stringDisplay "27"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1300))))))
+              (portInstance
+                (name &_RXD_PD0
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 1088 -1430))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (origin
+                        (pt 1098 -1430))))))
+              (transform
+                (origin
+                  (pt 910 -1200))))
+            (instance PAGE_BORDER
+              (viewRef PAGE_BORDER_TEMPLATE
+                (cellRef PAGE_BORDER_TEMPLATE
+                  (libraryRef DEFAULT))))
+            (instance
+              (rename TITLEBLOCK0 "TitleBlock0")
+              (viewRef TITLEBLOCK0
+                (cellRef TITLEBLOCK0
+                  (libraryRef CAPSYM)))
+              (property
+                (rename ORGADDR4 "OrgAddr4")
+                (string ""))
+              (property
+                (rename ORGADDR3 "OrgAddr3")
+                (string ""))
+              (property
+                (rename ORGADDR2 "OrgAddr2")
+                (string ""))
+              (property
+                (rename ORGADDR1 "OrgAddr1")
+                (string ""))
+              (property
+                (rename ORGNAME "OrgName")
+                (string ""))
+              (property
+                (rename CAGE_CODE "Cage Code")
+                (string ""))
+              (property
+                (rename REVCODE "RevCode")
+                (string
+                  (stringDisplay ""
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 1960 -1950))))))
+              (property
+                (rename NAME "Name")
+                (string "TitleBlock0"))
+              (property
+                (rename DESIGN_NAME "Design Name")
+                (string "ARDUINOUNO R3"))
+              (property
+                (rename DESIGN_FILE_NAME "Design File Name")
+                (string "C:\USERS\USER\DESKTOP\VSCODE_ORCAD\ARUINO_UNO\ARDUINOUNO R3.DSN"))
+              (property
+                (rename DESIGN_CREATE_DATE "Design Create Date")
+                (string "Thursday, July 11, 2019"))
+              (property
+                (rename DESIGN_MODIFY_DATE "Design Modify Date")
+                (string "Thursday, July 11, 2019"))
+              (property
+                (rename DESIGN_CREATE_TIME "Design Create Time")
+                (string "15:09:33"))
+              (property
+                (rename DESIGN_MODIFY_TIME "Design Modify Time")
+                (string "15:55:18"))
+              (property
+                (rename SCHEMATIC_NAME "Schematic Name")
+                (string "SCHEMATIC1"))
+              (property
+                (rename SCHEMATIC_CREATE_DATE "Schematic Create Date")
+                (string "Thursday, July 11, 2019"))
+              (property
+                (rename SCHEMATIC_MODIFY_DATE "Schematic Modify Date")
+                (string "Thursday, July 11, 2019"))
+              (property
+                (rename SCHEMATIC_CREATE_TIME "Schematic Create Time")
+                (string "15:09:34"))
+              (property
+                (rename SCHEMATIC_MODIFY_TIME "Schematic Modify Time")
+                (string "15:09:42"))
+              (property
+                (rename SCHEMATIC_PAGE_COUNT "Schematic Page Count")
+                (string "0"))
+              (property
+                (rename SCHEMATIC_PAGE_NUMBER "Schematic Page Number")
+                (string "0"))
+              (property
+                (rename PAGE_SIZE "Page Size")
+                (string
+                  (stringDisplay "Custom"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 1630 -1950))))))
+              (property
+                (rename PAGE_CREATE_DATE "Page Create Date")
+                (string "Thursday, July 11, 2019"))
+              (property
+                (rename PAGE_MODIFY_DATE "Page Modify Date")
+                (string
+                  (stringDisplay "Thursday, July 11, 2019"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 1672 -1970))))))
+              (property
+                (rename PAGE_CREATE_TIME "Page Create Time")
+                (string "15:09:33"))
+              (property
+                (rename PAGE_MODIFY_TIME "Page Modify Time")
+                (string "15:09:40"))
+              (property
+                (rename LOCATION_X_COORDINATE "Location X-Coordinate")
+                (string "1620"))
+              (property
+                (rename LOCATION_Y_COORDINATE "Location Y-Coordinate")
+                (string "1890"))
+              (property
+                (rename COLOR "Color")
+                (string "Default"))
+              (property
+                (rename SOURCE_LIBRARY "Source Library")
+                (string "C:\USERS\USER\DESKTOP\VSCODE_ORCAD\CDNS\CDNS\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB"))
+              (property
+                (rename SOURCE_SYMBOL "Source Symbol")
+                (string "TitleBlock0"))
+              (property
+                (rename PAGE_NAME "Page Name")
+                (string "PAGE1"))
+              (property
+                (rename DOC "Doc")
+                (string
+                  (stringDisplay ""
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 1660 -1950))))))
+              (property
+                (rename TITLE "Title")
+                (string
+                  (stringDisplay ""
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 1660 -1920))))))
+              (property
+                (rename PAGE_NUMBER "Page Number")
+                (string
+                  (stringDisplay "1"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 1870 -1970))))))
+              (property
+                (rename PAGE_COUNT "Page Count")
+                (string
+                  (stringDisplay "1"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 1930 -1970))))))
+              (transform
+                (origin
+                  (pt 1620 -1890))))
+            (boundingBox
+              (rectangle
+                (pt 0 -2000)
+                (pt 2000 0)))
+            (pageSize
+              (rectangle
+                (pt 0 -2000)
+                (pt 2000 0))))))))
+  (design SCHEMATIC1
+    (cellRef SCHEMATIC1
+      (libraryRef ARDUINOUNO_R3))))

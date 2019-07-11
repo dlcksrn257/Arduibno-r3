@@ -1,0 +1,135 @@
+Date and Time : 07/11/19 21:51:33
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+Checking Electrical Rules 
+WARNING(ORCAP-1831): Unconnected pin IC1,(AIN0/INT1)PD1 
+                    SCHEMATIC1, PAGE1  (11.60, 14.30) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(RTS/AIN5/INT6)PD6 
+                    SCHEMATIC1, PAGE1  (11.60, 13.80) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(AIN2/PCINT11)PC2 
+                    SCHEMATIC1, PAGE1  (11.60, 13.50) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(PCINT10)PC4 
+                    SCHEMATIC1, PAGE1  (11.60, 13.40) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(PCINT9/OC1B)PC5 
+                    SCHEMATIC1, PAGE1  (11.60, 13.30) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(OC1A/PCINT8)PC6 
+                    SCHEMATIC1, PAGE1  (11.60, 13.20) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(INT4/ICP1/CLK0)PC7 
+                    SCHEMATIC1, PAGE1  (11.60, 13.10) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(SS/PCINT0)PB0 
+                    SCHEMATIC1, PAGE1  (11.60, 12.90) 
+WARNING(ORCAP-1831): Unconnected pin IC1,(OC0B/INT0)PD0 
+                    SCHEMATIC1, PAGE1  (11.60, 14.40) 
+WARNING(ORCAP-1831): Unconnected pin U3,NC/FB 
+                    SCHEMATIC1, PAGE1  (12.60, 8.30) 
+WARNING(ORCAP-1831): Unconnected pin J5,1 
+                    SCHEMATIC1, PAGE1  (16.80, 9.60) 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+Checking Physical Rules 
+
+
+Checking Pins and Pin Connections
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+ERROR(ORCAP-1616): Reference is invalid for this part TX 
+                    SCHEMATIC1, PAGE1  (12.60, 13.90) 
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Entire Design: ARDUINOUNO R3 
+--------------------------------------------------
+
+Checking Power Pin Visibility  
+
+Checking Normal Convert View Sync  
+INFO(ORCAP-36105): Checking Missing Pin Numbers  
+
+Checking Device with Zero pins  
+INFO(ORCAP-36101): Checking Missing PCB Footprint Property  
+#1 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C12: SCHEMATIC1, PAGE1 (13.00, 8.20).
+#2 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U3: SCHEMATIC1, PAGE1 (11.80, 8.00).
+#3 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R14: SCHEMATIC1, PAGE1 (13.60, 4.80).
+#4 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J9: SCHEMATIC1, PAGE1 (3.70, 13.80).
+#5 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D3: SCHEMATIC1, PAGE1 (12.60, 14.40).
+#6 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C2: SCHEMATIC1, PAGE1 (6.80, 13.30).
+#7 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R15: SCHEMATIC1, PAGE1 (20.20, 9.20).
+#8 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C13: SCHEMATIC1, PAGE1 (20.20, 7.40).
+#9 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D4: SCHEMATIC1, PAGE1 (8.40, 11.70).
+#10 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C3: SCHEMATIC1, PAGE1 (18.80, 11.00).
+#11 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R1: SCHEMATIC1, PAGE1 (7.70, 13.10).
+#12 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R16: SCHEMATIC1, PAGE1 (20.20, 9.90).
+#13 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C14: SCHEMATIC1, PAGE1 (20.80, 7.40).
+#14 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D5: SCHEMATIC1, PAGE1 (13.60, 5.60).
+#15 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R2: SCHEMATIC1, PAGE1 (16.00, 12.90).
+#16 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C4: SCHEMATIC1, PAGE1 (16.00, 14.00).
+#17 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D6: SCHEMATIC1, PAGE1 (17.70, 7.10).
+#18 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Q2: SCHEMATIC1, PAGE1 (9.20, 7.90).
+#19 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R3: SCHEMATIC1, PAGE1 (15.90, 12.20).
+#20 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C5: SCHEMATIC1, PAGE1 (15.10, 12.60).
+#21 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D7: SCHEMATIC1, PAGE1 (21.10, 9.20).
+#22 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance TX: SCHEMATIC1, PAGE1 (12.60, 13.90).
+#23 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R4: SCHEMATIC1, PAGE1 (13.00, 13.00).
+#24 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C6: SCHEMATIC1, PAGE1 (15.10, 13.10).
+#25 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance IC1: SCHEMATIC1, PAGE1 (9.50, 12.00).
+#26 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R5: SCHEMATIC1, PAGE1 (13.50, 13.90).
+#27 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C7: SCHEMATIC1, PAGE1 (13.80, 12.20).
+#28 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance IC2: SCHEMATIC1, PAGE1 (17.10, 12.50).
+#29 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J11: SCHEMATIC1, PAGE1 (16.40, 6.70).
+#30 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C8: SCHEMATIC1, PAGE1 (6.60, 15.20).
+#31 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R6: SCHEMATIC1, PAGE1 (13.50, 14.40).
+#32 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J12: SCHEMATIC1, PAGE1 (19.20, 6.70).
+#33 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C9: SCHEMATIC1, PAGE1 (5.90, 15.20).
+#34 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R7: SCHEMATIC1, PAGE1 (13.50, 14.90).
+#35 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance L1: SCHEMATIC1, PAGE1 (4.50, 16.10).
+#36 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R8: SCHEMATIC1, PAGE1 (13.50, 15.40).
+#37 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R9: SCHEMATIC1, PAGE1 (8.00, 11.70).
+#38 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J1: SCHEMATIC1, PAGE1 (21.90, 11.50).
+#39 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J2: SCHEMATIC1, PAGE1 (21.80, 13.30).
+#40 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance RV1: SCHEMATIC1, PAGE1 (4.60, 14.60).
+#41 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance SW1: SCHEMATIC1, PAGE1 (15.90, 11.20).
+#42 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J3: SCHEMATIC1, PAGE1 (21.80, 14.50).
+#43 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Y1: SCHEMATIC1, PAGE1 (7.30, 13.10).
+#44 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance RV2: SCHEMATIC1, PAGE1 (5.40, 14.60).
+#45 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance SW2: SCHEMATIC1, PAGE1 (14.60, 11.90).
+#46 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Y2: SCHEMATIC1, PAGE1 (15.60, 12.90).
+#47 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J4: SCHEMATIC1, PAGE1 (17.80, 11.50).
+#48 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance F1: SCHEMATIC1, PAGE1 (5.20, 13.50).
+#49 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R10: SCHEMATIC1, PAGE1 (6.70, 14.40).
+#50 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J5: SCHEMATIC1, PAGE1 (17.10, 9.50).
+#51 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R11: SCHEMATIC1, PAGE1 (6.70, 13.90).
+#52 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance SW4: SCHEMATIC1, PAGE1 (7.50, 15.90).
+#53 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J6: SCHEMATIC1, PAGE1 (12.10, 11.30).
+#54 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R12: SCHEMATIC1, PAGE1 (6.90, 7.60).
+#55 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U1: SCHEMATIC1, PAGE1 (8.00, 7.00).
+#56 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C10: SCHEMATIC1, PAGE1 (5.80, 7.70).
+#57 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J7: SCHEMATIC1, PAGE1 (7.30, 11.00).
+#58 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D1: SCHEMATIC1, PAGE1 (16.20, 12.20).
+#59 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C11: SCHEMATIC1, PAGE1 (18.20, 7.40).
+#60 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U2: SCHEMATIC1, PAGE1 (12.30, 5.00).
+#61 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R13: SCHEMATIC1, PAGE1 (6.90, 6.60).
+#62 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C1: SCHEMATIC1, PAGE1 (6.80, 12.80).
+
+Checking Name Property for Hierarchical Instances  
+
+INFO(ORCAP-2211): Check High Speed Properties Syntax
+
+INFO(ORCAP-2212): Check Power Ground Mismatch
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? VCC  VCC  +5V  
+                    SCHEMATIC1, PAGE1  (8.10, 11.00) 
+
+Reporting Unused Refdes in multiple part packages
+Part	                       Quantity	                       Reference
+-----------------------------------------------------------------------------------------

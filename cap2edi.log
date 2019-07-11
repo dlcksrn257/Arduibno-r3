@@ -1,0 +1,24 @@
+
+Copyright (c) 2006-2012, Elgris Technologies, Inc.
+Copyright (c) 1998-2005, Electronic Tools Company
+
+OrCAD Capture to EDIF 2 0 0 Schematic Conversion Program SPB 16.60_1.089 built Aug 14 2012
+
+Started on Thu Jul 11 15:55:18 2019
+
+Reading config file C:\USERS\USER\DESKTOP\VSCODE_ORCAD\ARUINO_UNO\ARDUINOUNO R3.EDF
+Warning: Error on openning file C:\USERS\USER\DESKTOP\VSCODE_ORCAD\ARUINO_UNO\ARDUINOUNO R3.EDF
+
+orcadread :Converting file C:\USERS\USER\DESKTOP\VSCODE_ORCAD\ARUINO_UNO\ARDUINOUNO R3.DSN 
+Converting SchematicView   SCHEMATIC1 
+	Converting elements on  page PAGE1
+		Converting Parts
+		Converting Buses and Nets of Schematic View SCHEMATIC1 
+
+Writing EDIF: C:\USERS\USER\DESKTOP\VSCODE_ORCAD\ARUINO_UNO\ARDUINOUNO R3.EDF
+
+
+Finished on Thu Jul 11 15:55:18 2019
+
+
+0 errors detected, 1 warning detected
