@@ -33,7 +33,7 @@
     (DRC_Check_Duplicate_NetNames "TRUE")
     (DRC_Check_Floating_Pins "TRUE")
     (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
-    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_PCB_Footprint_Property "FALSE")
     (DRC_Check_Normal_Convert_View_Sync "TRUE")
     (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
     (DRC_Check_High_Speed_Props_Syntax "TRUE")
@@ -45,12 +45,33 @@
     (DRC_Visible_Power_pins "FALSE")
     (DRC_Report_Unused_Part_Packages "TRUE")
     (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
-    (DRC_Run_Physical_Custom_DRC "FALSE"))
+    (DRC_Run_Physical_Custom_DRC "FALSE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80"))
   (Folder "Outputs"
     (File ".\arduinouno r3.drc"
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "C:\USERS\USER\DESKTOP\VSCODE_ORCAD\CDNS\CDNS\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
     (GND
       (LibraryName
          "C:\USERS\USER\DESKTOP\VSCODE_ORCAD\CDNS\CDNS\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -103,11 +124,6 @@
       (FullPartName "CON6A.Normal")
       (LibraryName
          "C:\USERS\USER\DESKTOP\VSCODE_ORCAD\CDNS\CDNS\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
-      (DeviceIndex "0"))
-    (LED
-      (FullPartName "LED.Normal")
-      (LibraryName
-         "C:\USERS\USER\DESKTOP\VSCODE_ORCAD\CDNS\CDNS\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
       (DeviceIndex "0"))
     ("MOSFET P SGD"
       (FullPartName "MOSFET P SGD.Normal")
@@ -187,13 +203,13 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 417"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 417"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 26 1658 26 482")
-        (Scroll "0 440")
+        (Placement "44 0 1 -1 -1 -8 -31 26 1658 26 482")
+        (Scroll "-12 175")
         (Zoom "52")
         (Occurrence "/"))
       (Path "C:\USERS\USER\DESKTOP\VSCODE_ORCAD\ARUINO_UNO\ARDUINOUNO R3.DSN")
